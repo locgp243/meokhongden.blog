@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <title>Sign Up</title>
+</head>
+<style>
+    body{
+        background: #F2F3F5;
+    }
+    .flex{
+        display: flex;
+    }
+    label{
+        flex: 1;
+        max-width: 100px;
+    }
+    .input__ground{
+        flex: 2;
+    }
+   
+</style>
+<body>
+    <!-- wrapper code -->
+        <div id="preloader"></div>
+        <!-- ------HEADER---------- -->
+
+        <!-- header top open -->
+        <div class="header__top">
+            <div class="title__header">
+                <h1>
+                    <a href="../index.html">
+                        Mèo Không Đen
+                    </a>
+                </h1>
+            </div>
+
+            <div class="search__box">
+                <input class="search__input"></input>
+                <button class="search__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="ground__header">
+                <div class="login">
+                    <a href="./login.html">
+                        Login
+                    </a>
+                </div>
+                <div class="sign__up">
+                    <a href="./signup.html">
+                        Sign Up
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end header top -->
+
+        <!-- header navigation open -->
+        <div class="header__nav">
+            <ul>
+                <li class="active">
+                    <i style="margin-left: 5px" class="fa-solid fa-house"></i>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="">
+                    <a href="./introduction.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <a href="./goodpost.html">Bài Viết Hay</a>
+                </li>
+                <li>
+                    <a href="">Học Lập Trình</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-1">
+                        <ul>
+                            <li><a href="./html__css.html">HTML, CSS</a></li>
+                            <li><a href="">JavaScript</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thế Giới Otaku</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-2">
+                        <ul>
+                            <li><a href="">Anime</a></li>
+                            <li><a href="">Waifu</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thư Viện Idol</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-3">
+                        <ul>
+                            <li><a href="">My Idol</a></li>
+                            <li><a href="">BXH 2022</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Đời Sống</a>
+                </li>
+                <li>
+                    <a href="">About Me</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end header navigation -->
+
+        <!-- --------END HEADER------- -->
+
+        <!-- Content  -->
+        <div class="content container">
+            <div class="content__title">
+                <h1>Login</h1>
+            </div>
+            <div class="content__wrap">
+                <div class="content__desc">
+                    <!-- <p> Blog Mèo Không Đen ra đời vào tháng 3 năm 2022, vốn chỉ là một trang web đơn sơ bằng HTML với một chút CSS.</p> 
+                    </br>
+                    <p>Vào tháng 10/2022, sau khi nỗ lực rèn luyện HTML & CSS cùng với việc tiếp xúc JavaScript, Phạm Gia Lộc đã quyết định tiến hành project Remake Mèo Không Đen, phát triển trang web đơn sơ với HTML & CSS trở thành một blog lớn với đủ chủ đề khác nhau.</p>
+                    </br>
+                    <p>Mặc dù vẫn còn trong giai đoạn phát triển nhưng Blog Mèo Không Đen cam kết sẽ không ngừng hoàn thiện hơn để mang đến cho đọc giả một trải nghiệm tốt nhất...</p> -->
+                    <form class="hidden" action="">
+                        <table algin="center">
+                            <tr>
+                                <td>Username: </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Password: </td>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Re-password: </td>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+
+                            <!-- <tr>
+                                <td>Gender: </td>
+                                <td>
+                                    <input type="radio">Male
+                                    <input type="radio">Female
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Email: </td>
+                                <td>
+                                    <input type="mail">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Fullname: </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr> -->
+
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Sign Up">
+                                </td>
+                                <td>
+                                    <input type="reset" Value="Reset">
+                                </td>
+                            </tr>
+                            
+                            
+
+
+                        </table>
+                    </form>
+
+                    <form action="">
+                        <div class="signup__grounp">
+                            <div class="username flex">
+                                <label for="">Username: </label> <i class="fa-solid fa-user"></i>
+                                <div class="input__grounp">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="password flex">
+
+                                <label for="">Password: </label><i class="fa-solid fa-key"></i>
+                                <div class="input__grounp">
+                                    <input type="text">
+                                </div>
+                        
+                            </div>
+                            <div class="Re-password flex">
+
+                                <label for="">Re-password: </label><i class="fa-solid fa-key"></i>
+
+                                 <div class="input__grounp">
+                                    <input type="text">
+                                </div>
+
+                            </div>
+                            <!-- <div class="Email flex">
+                                <label for="">Email: </label> <i class="fa-solid fa-envelope"></i>
+                                 <div class="input__grounp">
+                                    <input type="text">
+                                </div>
+                            </div> -->
+<!-- 
+                            <div class="gender flex">
+                                <label for="">Gender: </label> <i class="fa-solid fa-venus-mars"></i>
+                                 <div class="input__grounp">
+                                    <input type="radio" name="gender">Nam
+                                    <input type="radio" name="gender">Nữ
+                                </div>
+                            </div> -->
+
+                            
+                            <!-- <div class="Fullname flex">
+                                <label for="">Fullname: </label> <i class="fa-solid fa-user"></i>
+                                 <div class="input__grounp">
+                                    <input type="text">
+                                </div>
+                            </div> -->
+
+                            
+                            <div class="input__btn flex">
+                                 <button style="margin-left:40px">Sign Up</button>
+                                 <!-- <button>Reset</button> -->
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+                </div>
+               <div class="about__author">
+                    <div class="author__avatar">
+                        <img src="../img/author1.jpg" alt="">
+                    </div>
+                    <div class="author__desc">
+                        <h2>Phạm Gia Lộc</h2>
+                        <p>Tác Giả</p>
+                        <p>Sinh viên BETU</p>
+                        <p>Người sáng lập Blog Mèo Không Đen</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- End Content -->
+
+
+
+
+        <!-- Area Hidden Open -->
+        <div class="hidden">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Area Hidden End -->
+
+ 
+    <!-- end wrapper code -->
+
+    <!-- script -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: #F2F3F5;
+    }
+    .content__item{
+        margin-bottom: 50px;
+    }
+
+    .item__img{
+        /* flex: 1;
+        max-width: 180px; */
+        width: 240px;
+        height: 240px;
+    }
+    .item__title{
+        flex: 3;
+        margin-left: 40px;
+        /* max-width: 460px; */
+    }
+
+    .item__title h2{
+        margin-bottom: 15px;
+    }
+
+    .item__title span{
+        opacity: 0.6;
+        font-size: 13px;
+       
+    }
+
+    .item__title p{
+        margin-top: 15px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <!-- wrapper code -->
+        <div id="preloader"></div>
+        <!-- ------HEADER---------- -->
+
+        <!-- header top open -->
+        <div class="header__top">
+            <div class="title__header">
+                <h1>
+                    <a href="./index.html">
+                        Mèo Không Đen
+                    </a>
+                </h1>
+            </div>
+
+            <div class="search__box">
+                <input class="search__input"></input>
+                <button class="search__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="ground__header">
+                <div class="login">
+                    <a href="./pages/login.html">
+                        Login
+                    </a>
+                </div>
+                <div class="sign__up">
+                    <a href="./pages/signup.html">
+                        Sign Up
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end header top -->
+
+        <!-- header navigation open -->
+        <div class="header__nav">
+            <ul>
+                <li class="active">
+                    <i style="margin-left: 5px" class="fa-solid fa-house"></i>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/introduction.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <a href="./pages/goodpost.html">Bài Viết Hay</a>
+                </li>
+                <li>
+                    <a href="">Học Lập Trình</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-1">
+                        <ul>
+                            <li><a href="./pages/html__css.html">HTML, CSS</a></li>
+                            <li><a href="">JavaScript</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thế Giới Otaku</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-2">
+                        <ul>
+                            <li><a href="">Anime</a></li>
+                            <li><a href="">Waifu</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thư Viện Idol</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-3">
+                        <ul>
+                            <li><a href="">My Idol</a></li>
+                            <li><a href="">BXH 2022</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Đời Sống</a>
+                </li>
+                <li>
+                    <a href="">About Me</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end header navigation -->
+
+        <!-- --------END HEADER------- -->
+
+        <!-- SLIDE OPEN -->
+        <div class="slide">
+            <img src="./img/slide8.gif" alt="">
+            <div class="slide__wrap">
+                <div class="slide__title">
+                    <h1></h1> 
+                    <i class="fa-solid fa-cat"></i>
+                </div>
+
+                <div class="slide__desc">
+                    ~~Có đôi khi anh chỉ muốn thời gian dừng mãi tại những năm tháng này, anh và em cứ đi bên nhau như bao ngày còn trẻ. Mặc năm tháng chảy trôi, cũng mặc kệ trong lòng em có ai. 
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDE -->
+
+
+        <!-- CONTENT OPEN -->
+        <div class="content container">
+            <div class="content__title">
+                <h1>Blog Mèo Không Đen có gì?</h1>
+            </div>
+            <div class="content__wrap">
+                <div class="content__item zoom show-on-scroll">
+                    <p> Nơi trao đổi kiến thức, cái nhìn về ngành lập trình. </p>
+                    </br>
+                    <p> Từ tổng quan đến chuyên sâu.</p>
+                    </br>
+                    <p> Từ kĩ năng lập trình đến những kĩ năng mềm, với phương châm Developer không phải chỉ biết Code.</p>
+                </div>
+                <div class="content__item zoom show-on-scroll">
+                    <p>Nơi giao lưu, chia sẽ những bộ Anime thú vị. </p>
+                    </br>
+                    <p>Tiêu điểm về những nữ waifu xinh đẹp, dễ thương đầy cá tính cùng với câu chuyện của họ trong chính thế giới Anime</p>
+                </div>
+                <div class="content__item zoom show-on-scroll">
+                   <p>Nơi giãy bày những nỗi niềm trong cuộc sống.</p> 
+                    </br>
+                    <p> Là niềm vui, tôi sẽ vui cùng bạn.</p>
+                    </br>
+                    <p> Là nỗi buồn, tôi sẽ buồn cùng bạn.</p>
+                    </br>
+                    <p> Bốn mùa xuân hạ thu đông, tôi sẽ đồng hành cùng bạn.</p>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="content container">
+            <div class="content__title">
+                <h1>Bài Viết Tiêu Biểu</h1>
+            </div>
+            <div class="content__wrap">
+                
+            </div>
+            <div style="display: flex" class="content__item">
+
+                <div class="item__img">
+                    <img src="./img/author1.jpg" alt="">
+                </div>
+
+                <div class="item__title">
+                    <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                    <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                    <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                    <div class="item__more">
+                        <i class="fa-solid fa-eye"></i> <a href="">Xem thêm...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- content item -->
+            <div style="display: flex" class="content__item">
+
+                <div class="item__img">
+                    <img src="./img/html__css.png" alt="">
+                </div>
+
+                <div class="item__title">
+                    <h2>Khái quát về HTML & CSS</h2>
+
+                    <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 30k</span>
+
+                    <p>Khái quát về HTML, CSS giúp bạn hiểu rõ hơn về cách dùng cũng như công dụng của nó, ngoài ra còn có một số hướng dẫn để tự mình hoàn thiện một project đơn giản...</p>
+
+                    <div class="item__more">
+                        <i class="fa-solid fa-eye"></i> <a href="./pages/html__css.html">Xem thêm...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- content item -->
+            <div style="display: flex" class="content__item">
+
+                <div class="item__img">
+                    <img src="./img/js.png" alt="">
+                </div>
+
+                <div class="item__title">
+                    <h2>Khái quát về JavaScript</h2>
+
+                    <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 700k</span>
+
+                    <p>Là một trong những ngôn ngữ lập trình vô cùng phổ biến, có đóng vai trò lớn trong việc “vận hành” các trang web hiện nay. Vậy JavaScript là gì, nó có vai trò gì, và làm thế nào để bật JavaScript trên điện thoại để tận hưởng ích lợi của nó? Cùng xem câu trả lời trong bài viết nhé!</p>
+
+                    <div class="item__more">
+                        <i class="fa-solid fa-eye"></i> <a href="">Xem thêm...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- content item -->
+        </div>
+
+
+        <!-- END CONTENT -->
+
+
+        <!-- FOOTER OPEN-->
+        <div class="footer">
+            <div class="footer__logo">
+                <div class="title__header">
+                    <h1>
+                        <a href="./index.html">
+                            Mèo Không Đen
+                        </a>
+                    </h1>
+                    <div class="title__icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__title">
+               <p>Blog Mèo Không Đen, nơi thỏa sức chia sẻ câu chuyện của chính bạn, hãy viết lên những thứ của hiện tại để trở thành quá khứ trong tương lai không xa...</p>
+               <span>Copyright Blog Mèo Không Đen &copy; 2022</span>
+              
+            </div>
+
+            <div class="footer__enter">
+                <h3>Số lượng truy cập Website: </h3>
+                <p><i class="fa-solid fa-eye"></i>24.313.890 view</p>
+            </div>
+
+        </div>
+        <!-- END FOOTER -->
+
+
+
+
+
+
+
+        <!-- Area Hidden Open -->
+        <div class="hidden">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Area Hidden End -->
+
+ 
+    <!-- end wrapper code -->
+
+    <!-- script -->
+    <script>
+        var i = 0;
+    var txt = 'Chào mừng đến với Blog Mèo Không Đen';
+    var speed = 400;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.querySelector(".slide__title h1").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    typeWriter();
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

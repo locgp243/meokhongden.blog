@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <title>GoodPost</title>
+</head>
+<style>
+    body{
+        background: #F2F3F5;
+    }
+    .content__item{
+        margin-bottom: 50px;
+    }
+
+    .item__img{
+        /* flex: 1;
+        max-width: 180px; */
+        width: 240px;
+        height: 240px;
+    }
+    .item__title{
+        flex: 3;
+        margin-left: 40px;
+        max-width: 460px;
+    }
+
+    .item__title h2{
+        margin-bottom: 15px;
+    }
+
+    .item__title span{
+        opacity: 0.6;
+        font-size: 13px;
+       
+    }
+
+    .item__title p{
+        margin-top: 15px;
+        font-style: italic;
+    }
+</style>
+<body>
+    <!-- wrapper code -->
+        <div id="preloader"></div>
+        <!-- ------HEADER---------- -->
+        
+        <!-- header top open -->
+        <div class="header__top">
+            <div class="title__header">
+                <h1>
+                    <a href="../index.html">
+                        Mèo Không Đen
+                    </a>
+                </h1>
+            </div>
+
+            <div class="search__box">
+                <input class="search__input"></input>
+                <button class="search__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="ground__header">
+                <div class="login">
+                    <a href="./login.html">
+                        Login
+                    </a>
+                </div>
+                <div class="sign__up">
+                    <a href="./signup.html">
+                        Sign Up
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end header top -->
+
+        <!-- header navigation open -->
+        <div class="header__nav">
+            <ul>
+                <li class="active">
+                    <i style="margin-left: 5px" class="fa-solid fa-house"></i>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="">
+                    <a href="./introduction.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <a href="">Bài Viết Hay</a>
+                </li>
+                <li>
+                    <a href="">Học Lập Trình</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-1">
+                        <ul>
+                            <li><a href="./html__css.html">HTML, CSS</a></li>
+                            <li><a href="">JavaScript</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thế Giới Otaku</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-2">
+                        <ul>
+                            <li><a href="">Anime</a></li>
+                            <li><a href="">Waifu</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Thư Viện Idol</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="sub__menu-3">
+                        <ul>
+                            <li><a href="">My Idol</a></li>
+                            <li><a href="">BXH 2022</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Đời Sống</a>
+                </li>
+                <li>
+                    <a href="">About Me</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end header navigation -->
+
+        <!-- --------END HEADER------- -->
+
+        <!-- Content  -->
+        <div class="content container">
+            <div class="content__title">
+                <h1>Bài Viết Hay</h1>
+            </div>
+            <div class="content__wrap">
+                <div class="content__desc">
+                    <!-- <p> Blog Mèo Không Đen ra đời vào tháng 3 năm 2022, vốn chỉ là một trang web đơn sơ bằng HTML với một chút CSS.</p> 
+                    </br>
+                    <p>Vào tháng 10/2022, sau khi nỗ lực rèn luyện HTML & CSS cùng với việc tiếp xúc JavaScript, Phạm Gia Lộc đã quyết định tiến hành project Remake Mèo Không Đen, phát triển trang web đơn sơ với HTML & CSS trở thành một blog lớn với đủ chủ đề khác nhau.</p>
+                    </br>
+                    <p>Mặc dù vẫn còn trong giai đoạn phát triển nhưng Blog Mèo Không Đen cam kết sẽ không ngừng hoàn thiện hơn để mang đến cho đọc giả một trải nghiệm tốt nhất...</p> -->
+                    <div style="display: flex" class="content__item">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                            <div class="item__more">
+                                <i class="fa-solid fa-eye"></i> <a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item content -->
+                    <div style="display: flex" class="content__item">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                            <div class="item__more">
+                                <i class="fa-solid fa-eye"></i>  <a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item content -->
+                    <div style="display: flex" class="content__item">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                            <div class="item__more">
+                                <i class="fa-solid fa-eye"></i><a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item content -->
+                    <div style="display: flex" class="content__item">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                            <div class="item__more">
+                                <i class="fa-solid fa-eye"></i><a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item content -->
+
+                    <!-- hidden content item -->
+                    <div style="display: flex" class="content__item hidden">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Tiêu Điểm Nhân Vật Rem Trong Re:zero</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Xuất hiện lần đầu với bộ đồ hầu gái màu trắng dễ thương, mái tóc ngắn màu xanh dương cùng khuôn mặt nhỏ nhắn đáng yêu cùng với những tình tiết diễn biến tiếp theo của câu chuyện, Rem đã chiếm đoạt vô số trái tim của bao độc giả, trở thành một trong những nhân vật được yêu thích nhất cộng động Anime...</p>
+
+                            <div class="item__more">
+                                <a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hidden content item end -->
+
+                    <div class="content__more">
+                        Xem thêm
+                    </div>
+
+
+                </div>
+               <div class="about__author">
+                    <div class="author__avatar">
+                        <img src="../img/author1.jpg" alt="">
+                    </div>
+                    <div class="author__desc">
+                        <h2>Phạm Gia Lộc</h2>
+                        <p>Tác Giả</p>
+                        <p>Sinh viên BETU</p>
+                        <p>Người sáng lập Blog Mèo Không Đen</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- End Content -->
+
+
+
+
+        <!-- Area Hidden Open -->
+        <div class="hidden">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Area Hidden End -->
+
+ 
+    <!-- end wrapper code -->
+
+    <!-- script -->
+    
+
+    <script src="../js/main.js"></script>
+
+ 
+
+</body>
+</html>

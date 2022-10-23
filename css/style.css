@@ -1,0 +1,623 @@
+/* color */
+:root{
+    --green-mid: #24890d;
+    --Amazon-Blue: #00A7CE;
+    --American-Blue: #0A3161;
+    --Argentinian--Blue: #6CACE4;
+    --UFFA--Blue: #003087;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* class chung */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+    /* background: var(--Argentinian--Blue); */
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.hidden{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open{
+    display: inherit;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* code */
+.wrapper{}
+
+#preloader{
+    background: #000 url('../img/preloading.gif') no-repeat center center;
+    background-size: 15%;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+}
+
+.header__top{
+    background-color: #000;
+    padding: 0px 0px 0px 20px;
+    max-height: 48px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+}
+
+.title__header{}
+
+.title__header h1{
+    font-weight: 700;
+}
+
+.title__header h1 a{
+    color: #fff;
+}
+/* search box */
+.search__box{
+    width: 48px;
+    height: 48px;
+    /* background: var(--American-Blue); */
+    background: var(--Argentinian--Blue);
+    overflow: hidden;
+    position: relative;
+    /* border-radius: 15px; */
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+.search__box .search__input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 100px 20px 20px;
+    outline: none;
+}
+.search__box .search__btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #000;
+}
+
+.search__box .search__btn i{
+    color: #fff;
+}
+
+.search__box .search__btn:hover{
+    opacity: 0.8;
+}
+
+.search__box.open{
+    width: 400px;
+}
+/* end search box */
+
+/* ground__header open */
+.ground__header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
+}
+
+.ground__header .login a{
+    margin: 0px 5px 0px 0px;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+}
+
+.ground__header .login a,
+.ground__header .sign__up a{
+    font-size: 18px;
+    color: #fff;
+}
+.ground__header .login a:hover,
+.ground__header .sign__up a:hover{
+    color: var(--Argentinian--Blue);
+}
+/* end ground__header */
+
+
+/* header nav */
+.header__nav{
+    /* position: sticky;
+    top: 0; */
+    background-color: var(--Amazon-Blue);
+    height: 48px;
+    max-height: 48px;
+    line-height: 48px;  
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    align-self: flex-start;
+    z-index: 100;
+
+}
+.header__nav > ul{
+    /* display: flex;
+    justify-content: space-around; */
+    max-width: 1000px;
+    position: absolute;
+    right: 20px;
+}
+
+.header__nav > ul > li{
+    margin: 10px 5px;
+    padding: 10px 0px;
+    display: inline;
+}
+
+.header__nav > ul > li > a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.active, .header__nav ul li:hover{
+    background: var(--American-Blue);
+    border-radius: 3px;
+}
+
+.header__nav ul li i{
+    color: #fff;
+}
+
+/* SUB MENUUUUUUUUUUU*/
+
+/* sub menu 1 */
+.sub__menu-1{
+    display: none;
+}
+
+.sub__menu-1 ul{
+    padding: 20px;
+    width: 150px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sub__menu-1 ul li{
+    text-align: center;
+}
+
+.sub__menu-1 ul li a{
+    color: #fff;
+}
+
+.header__nav ul li:hover .sub__menu-1{
+    display: block;
+    position: absolute;
+    background: var(--Amazon-Blue);
+    margin-top: -5px;
+    left: 33%;
+}
+
+/* sub__menu-2 */
+.sub__menu-2{
+    display: none;
+}
+
+.sub__menu-2 ul{
+    padding: 20px;
+    width: 150px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sub__menu-2 ul li{
+    text-align: center;
+}
+
+.sub__menu-2 ul li a{
+    color: #fff;
+}
+
+.header__nav ul li:hover .sub__menu-2{
+    display: block;
+    position: absolute;
+    background: var(--Amazon-Blue);
+    margin-top: -5px;
+    left: 49%;
+}
+
+
+/* sub menu 3 */
+.sub__menu-3{
+    display: none;
+}
+
+.sub__menu-3 ul{
+    padding: 20px;
+    width: 150px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sub__menu-3 ul li{
+    text-align: center;
+}
+
+.sub__menu-3 ul li a{
+    color: #fff;
+}
+
+.header__nav ul li:hover .sub__menu-3{
+    display: block;
+    position: absolute;
+    background: var(--Amazon-Blue);
+    margin-top: -5px;
+    left: 65%;
+}
+
+
+/* SUB MENUUUUUUUUUUU END*/ 
+
+/* SLIDE */
+.slide{
+    /* background: url('/img/slide8.gif') no-repeat center;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%; */
+    object-fit: cover;
+}
+
+.slide__wrap{
+    position: absolute;
+    top: 60%;
+    margin-left: 40px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.slide__title{
+    display: flex;
+    align-items: center;
+}
+
+.slide__title h1{
+    font-size: 50px;
+}
+
+.slide__title i{
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.slide__desc{
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.slide__title i:hover{
+    color: var(--Amazon-Blue);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+/* END SLIDE */
+
+
+/* FOOTER OPEN */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: var(--UFFA--Blue);
+    padding: 20px;
+}
+
+.footer .footer__logo{
+    margin-right: 40px;
+}
+
+.footer .title__icon i{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer .title__icon i:hover{
+    color: var(--Amazon-Blue)
+}
+
+.footer__title{
+    flex: 1;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 40px;
+    font-style: italic;
+    opacity: 0.9;
+}
+.footer__title > p{
+    margin-bottom: 10px;
+}
+.footer__title > span{
+    font-size: 16px;
+    opacity: 0.6;
+    text-align: center;
+    margin-top: 5px;
+    font-style: normal;
+}
+
+.footer__enter h3{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.footer__enter p{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer__enter p i{
+    margin-right: 10px;
+}
+/* END FOOTER */
+
+
+
+/* ========================INTRODUCTION CSS====================== */
+
+.content{
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* home */
+.content .content__wrap > .content__item{
+    background: var(--Amazon-Blue);
+    width: 280px;
+    height: 320px;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.content__item p{
+    font-size: 20px;
+    /* text-align: center; */
+}
+/* end home */
+
+.content__title{
+    padding: 20px 0;
+}
+
+.content__title h1{
+    color: var(--American-Blue);
+}
+
+.content__wrap{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 50px; */
+    margin-top: 30px;
+}
+
+.content__desc{
+    flex: 3;
+}
+
+.content__desc p{
+    font-size: 16px;
+}
+
+.about__author{
+    flex: 1;
+    text-align: center;
+}
+
+.about__author .author__desc h2{
+    color: var(--American-Blue);
+    margin: 20px 0;
+}
+
+
+.about__author .author__desc p{
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.about__author .author__avatar{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.about__author .author__avatar img{
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.about__author .author__avatar:hover img{
+    transform: scale(1.2);
+}
+/* ========================END INTRODUCTION CSS=================== */
+
+
+/*============================== Goodpost================================= */
+.item__more{
+    margin-top: 15px;
+}
+
+.item__more a{
+    color: var(--Amazon-Blue);
+    transition: .5s ease;
+    position: relative;
+}
+
+.item__more:hover a,
+.item__more:hover a::after{
+    color: var(--UFFA--Blue);
+    transform: scale(1);
+}
+
+.item__more a::after{
+    content: '';
+    height: 3px;
+    background: var(--American-Blue);
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: .5s ease-in;
+}
+
+.item__img{
+    overflow: hidden;
+ 
+}
+
+.item__img img{
+    transition: .5s ease-in;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.item__img:hover img{
+    transform: scale(1.2);
+}
+
+
+.content__more{
+    padding: 10px 20px;
+    color: #fff;
+    background: var(--American-Blue);
+    max-width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+/*============================== END Goodpost================================= */
+
+
+
+/* =============================Sign Up======================================= */
+.signup__grounp{
+
+}
+
+.signup__grounp div{
+    margin-bottom: 10px;
+}
+.signup__grounp label{
+    color: var(--Amazon-Blue);
+    font-size: 16px;
+}
+
+.signup__grounp i{
+    color: var(--Amazon-Blue);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.gender .input__grounp input{
+    margin-right: 10px;
+    color: var(--Amazon-Blue);
+}
+
+.input__btn{
+    margin-left: 80px;
+}
+
+
+.input__btn button{
+    padding: 10px 20px;
+    max-width: 100px;
+    width: 100px;
+    margin: 5px;
+    background: var(--Amazon-Blue);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .5s ease-in;
+}
+
+.input__btn button:hover{
+    background: var(--American-Blue);
+}
+/* =============================Sign Up End==================================== */
+
+/* Animation */
+
+.left-to-right{
+    transform: translateX(-200%);
+    transition: 1s;
+}
+
+.left-to-right.start{
+    transform: translateX(0);
+}
+
+.right-to-left{
+    transform: translateX(200%);
+    transition: 1s;
+}
+
+.right-to-left.start{
+    transform: translateX(0)
+}
+
+.zoom {
+	transform: scale(0);
+}
+
+.zoom.start {
+	transition: 0.5s ease-in-out;
+	transform: unset;
+}
