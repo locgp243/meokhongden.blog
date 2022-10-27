@@ -55,6 +55,42 @@ img{
     visibility: visible;
 }
 
+.item__img{
+    position: relative;
+}
+
+.title__animation{
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 1;
+    text-transform: uppercase;
+    animation-name: title__animation;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    position: absolute;
+    transform: translate(5px, 5px);
+    color: #eb600f;
+    text-shadow: 1px 1px 2px #000;
+    }
+
+    @keyframes title__animation{
+        0%{
+            color: #fff;
+        }
+        25%{
+            color: #eb600f;
+        }
+        50%{
+            color: #fff;
+        }
+        75%{
+            color: #eb600f
+        }
+        100%{
+            color: #fff;
+        }
+    }
+
 /* code */
 .wrapper{}
 
