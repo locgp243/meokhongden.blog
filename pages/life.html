@@ -7,29 +7,48 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="icon" href="../img/iconRem.jpg" type="image/gif" sizes="16x16">
-    <title>Sign Up</title>
+    <title>Đời Sống</title>
 </head>
 <style>
     body{
         background: #F2F3F5;
     }
-    .flex{
-        display: flex;
+    .content__item{
+        margin-bottom: 50px;
     }
-    label{
-        flex: 1;
-        max-width: 100px;
+
+    .item__img{
+        /* flex: 1;
+        max-width: 180px; */
+        width: 240px;
+        height: 240px;
     }
-    .input__ground{
-        flex: 2;
+    .item__title{
+        flex: 3;
+        margin-left: 40px;
+        max-width: 460px;
     }
-   
+
+    .item__title h2{
+        margin-bottom: 15px;
+    }
+
+    .item__title span{
+        opacity: 0.6;
+        font-size: 13px;
+       
+    }
+
+    .item__title p{
+        margin-top: 15px;
+        font-style: italic;
+    }
 </style>
 <body>
     <!-- wrapper code -->
         <div id="preloader"></div>
         <!-- ------HEADER---------- -->
-
+        
         <!-- header top open -->
         <div class="header__top">
             <div class="title__header">
@@ -77,7 +96,7 @@
                     <a href="./goodpost.html">Bài Viết Hay</a>
                 </li>
                 <li>
-                    <a href="">Học Lập Trình</a>
+                    <a href="./html__css.html">Học Lập Trình</a>
                     <i class="fa-solid fa-caret-down"></i>
                     <div class="sub__menu-1">
                         <ul>
@@ -88,18 +107,18 @@
                     </div>
                 </li>
                 <li>
-                    <a href="">Thế Giới Otaku</a>
+                    <a href="./anime.html">Thế Giới Otaku</a>
                     <i class="fa-solid fa-caret-down"></i>
                     <div class="sub__menu-2">
                         <ul>
-                            <li><a href="">Anime</a></li>
+                            <li><a href="./anime.html">Anime</a></li>
                             <li><a href="">Waifu</a></li>
                             <li><a href="">...</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="">Thư Viện Idol</a>
+                    <a href="./myidol.html">Thư Viện Idol</a>
                     <i class="fa-solid fa-caret-down"></i>
                     <div class="sub__menu-3">
                         <ul>
@@ -110,7 +129,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="">Đời Sống</a>
+                    <a href="./life.html">Đời Sống</a>
                 </li>
                 <li>
                     <a href="">About Me</a>
@@ -124,136 +143,70 @@
         <!-- Content  -->
         <div class="content container">
             <div class="content__title">
-                <h1>Sign Up</h1>
+                <h1>Đời Sống</h1>
             </div>
             <div class="content__wrap">
+
                 <div class="content__desc">
                     <!-- <p> Blog Mèo Không Đen ra đời vào tháng 3 năm 2022, vốn chỉ là một trang web đơn sơ bằng HTML với một chút CSS.</p> 
                     </br>
                     <p>Vào tháng 10/2022, sau khi nỗ lực rèn luyện HTML & CSS cùng với việc tiếp xúc JavaScript, Phạm Gia Lộc đã quyết định tiến hành project Remake Mèo Không Đen, phát triển trang web đơn sơ với HTML & CSS trở thành một blog lớn với đủ chủ đề khác nhau.</p>
                     </br>
                     <p>Mặc dù vẫn còn trong giai đoạn phát triển nhưng Blog Mèo Không Đen cam kết sẽ không ngừng hoàn thiện hơn để mang đến cho đọc giả một trải nghiệm tốt nhất...</p> -->
-                    <form class="hidden" action="">
-                        <table algin="center">
-                            <tr>
-                                <td>Username: </td>
-                                <td>
-                                    <input type="text">
-                                </td>
-                            </tr>
 
-                            <tr>
-                                <td>Password: </td>
-                                <td>
-                                    <input type="password">
-                                </td>
-                            </tr>
+                    <!-- item -->
+                    <div style="display: flex" class="content__item">
 
-                            <tr>
-                                <td>Re-password: </td>
-                                <td>
-                                    <input type="password">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Gender: </td>
-                                <td>
-                                    <input type="radio">Male
-                                    <input type="radio">Female
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Email: </td>
-                                <td>
-                                    <input type="mail">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Fullname: </td>
-                                <td>
-                                    <input type="text">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="submit" value="Sign Up">
-                                </td>
-                                <td>
-                                    <input type="reset" Value="Reset">
-                                </td>
-                            </tr>
-                            
-                            
-
-
-                        </table>
-                    </form>
-
-                    <form action="">
-                        <div class="signup__grounp">
-                            <div class="username flex">
-                                <label for="">Username: </label> <i class="fa-solid fa-user"></i>
-                                <div class="input__grounp">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="password flex">
-
-                                <label for="">Password: </label><i class="fa-solid fa-key"></i>
-                                <div class="input__grounp">
-                                    <input type="text">
-                                </div>
-                        
-                            </div>
-                            <div class="Re-password flex">
-
-                                <label for="">Re-password: </label><i class="fa-solid fa-key"></i>
-
-                                 <div class="input__grounp">
-                                    <input type="text">
-                                </div>
-
-                            </div>
-                            <div class="Email flex">
-                                <label for="">Email: </label> <i class="fa-solid fa-envelope"></i>
-                                 <div class="input__grounp">
-                                    <input type="text">
-                                </div>
-                            </div>
-
-                            <div class="gender flex">
-                                <label for="">Gender: </label> <i class="fa-solid fa-venus-mars"></i>
-                                 <div class="input__grounp">
-                                    <input type="radio" name="gender">Nam
-                                    <input type="radio" name="gender">Nữ
-                                </div>
-                            </div>
-
-                            
-                            <div class="Fullname flex">
-                                <label for="">Fullname: </label> <i class="fa-solid fa-user"></i>
-                                 <div class="input__grounp">
-                                    <input type="text">
-                                </div>
-                            </div>
-
-                            
-                            <div class="input__btn flex">
-                                 <button>Sign Up</button>
-                                 <button>Reset</button>
-                            </div>
-
-
-
+                        <div class="item__img">
+                            <img src="../img/apple.jpg" alt="">
                         </div>
-                    </form>
+
+                        <div class="item__title">
+                            <h2>Câu Chuyện Quả Táo</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Một em bé đáng yêu đang cầm hai quả táo trong tay. Mẹ em bước vào phòng và mỉm cười hỏi cô con gái nhỏ: “Con yêu...</p>
+
+                            <div class="item__more">
+                                <i class="fa-solid fa-eye"></i> <a href="./life01.html">Xem thêm...</a>
+                            </div>
+                        </div>
+                        <span class="title__animation">#1</span>
+                    </div>
+
+                    
+                    
+
+                    <!-- hidden content item -->
+                    <!-- <div style="display: flex" class="content__item hidden">
+
+                        <div class="item__img">
+                            <img src="../img/author1.jpg" alt="">
+                        </div>
+
+                        <div class="item__title">
+                            <h2>Bài 5: Background</h2>
+
+                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
+
+                            <p>Background có lẽ nghe rất quen thuộc với mọi người, nhưng trong CSS nó sẽ có gì khác biệt không? Hãy đón xem bài viết này để hiểu hơn về Background...</p>
+
+                            <div class="item__more">
+                                <a href="">Xem thêm...</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- hidden content item end -->
+
+                    <div class="content__more">
+                        Xem thêm
+                    </div>
 
 
                 </div>
+
                <div class="about__author">
                     <div class="author__avatar">
                         <img src="../img/author1.jpg" alt="">
@@ -265,6 +218,7 @@
                         <p>Người sáng lập Blog Mèo Không Đen</p>
                     </div>
                </div>
+
             </div>
         </div>
         <!-- End Content -->
@@ -303,6 +257,7 @@
 
 
 
+
         <!-- Area Hidden Open -->
         <div class="hidden">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pw2YZCnUnJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -314,6 +269,11 @@
     <!-- end wrapper code -->
 
     <!-- script -->
+    
+
     <script src="../js/main.js"></script>
+
+ 
+
 </body>
 </html>
