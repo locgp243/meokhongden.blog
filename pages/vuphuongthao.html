@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="icon" href="../img/iconRem.jpg" type="image/gif" sizes="16x16">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
     <title>Vũ Phương Thảo</title>
 </head>
 <style>
@@ -43,6 +44,78 @@
         margin-top: 15px;
         font-style: italic;
     }
+
+    .content__gallery{
+        margin-top: 30px;
+    }
+
+    /* code */
+    img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	min-width: 95.5px;
+	min-height: 75px;
+}
+
+.main {
+	height: 80%;
+	position: relative;
+    background-color: #333;
+}
+
+.control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 80px;
+	color: white;
+	cursor: pointer;
+}
+
+.prev {
+	left: -10px;
+}
+
+.next {
+	right: -10px;
+}
+
+.wraps{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.wraps img{
+	width: 300px;
+	max-height: 400px;
+	
+}
+/* .img-wrap {
+	width: 100%;
+	height: 100%;
+} */
+
+.list-img {
+	display: flex;
+	overflow: auto;
+	max-height: 105px;
+}
+
+.list-img div {
+	cursor: pointer;
+	padding: 5px;
+	background-color: #bbb;
+	flex: 1;
+}
+
+.list-img div.active {
+	background-color: rgb(220, 86, 86);
+}
+    /* end */
 </style>
 <body>
     <!-- wrapper code -->
@@ -148,11 +221,6 @@
             <div class="content__wrap">
 
                 <div class="content__desc">
-                    <!-- <p> Blog Mèo Không Đen ra đời vào tháng 3 năm 2022, vốn chỉ là một trang web đơn sơ bằng HTML với một chút CSS.</p> 
-                    </br>
-                    <p>Vào tháng 10/2022, sau khi nỗ lực rèn luyện HTML & CSS cùng với việc tiếp xúc JavaScript, Phạm Gia Lộc đã quyết định tiến hành project Remake Mèo Không Đen, phát triển trang web đơn sơ với HTML & CSS trở thành một blog lớn với đủ chủ đề khác nhau.</p>
-                    </br>
-                    <p>Mặc dù vẫn còn trong giai đoạn phát triển nhưng Blog Mèo Không Đen cam kết sẽ không ngừng hoàn thiện hơn để mang đến cho đọc giả một trải nghiệm tốt nhất...</p> -->
                     <div style="display: flex" class="content__item">
 
                         <div class="item__img">
@@ -164,7 +232,7 @@
 
                             <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
 
-                            <p>Sinh năm: 1997</p>
+                            <p>Sinh năm: 28-11-1997</p>
                             <p>Tuổi: 25 tuổi</p>
                             <p>Nơi sinh: Hà Nội, Việt Nam</p>
                             <p>Nghề nghiệp: MC</p>
@@ -179,85 +247,7 @@
                             </div> -->
                         </div>
                     </div>
-                    <!-- item content -->
-                    <!-- <div style="display: flex" class="content__item">
-
-                        <div class="item__img">
-                            <img src="../img/author1.jpg" alt="">
-                        </div>
-
-                        <div class="item__title">
-                            <h2>Bài 2: CSS Cơ Bản</h2>
-
-                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
-
-                            <p>Bài viết nói về sự ra đời của CSS, cấu trúc cơ bản của CSS cũng như các cách ứng dụng CSS vào một trang web HTML...</p>
-
-                            <div class="item__more">
-                                <i class="fa-solid fa-eye"></i>  <a href="">Xem thêm...</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- item content -->
-                    <!-- <div style="display: flex" class="content__item">
-
-                        <div class="item__img">
-                            <img src="../img/author1.jpg" alt="">
-                        </div>
-
-                        <div class="item__title">
-                            <h2>Bài 3: Padding, Margin và Border</h2>
-
-                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
-
-                            <p>Bài viết này sẽ đi sâu vào CSS nhiều hơn, nó sẽ giải thích rõ Padding, Margin, Border là gì, chúng sẽ làm được gì và vai trò của chúng là gì trong một trang web...</p>
-
-                            <div class="item__more">
-                                <i class="fa-solid fa-eye"></i><a href="">Xem thêm...</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- item content -->
-                    <!-- <div style="display: flex" class="content__item">
-
-                        <div class="item__img">
-                            <img src="../img/author1.jpg" alt="">
-                        </div>
-
-                        <div class="item__title">
-                            <h2>Bài 4: Position</h2>
-
-                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
-
-                            <p>Nhắc đến CSS không thể không nhớ đến Position, vậy Position là gì? Nó giữ vai trò gì trong CSS, qua bài viết này bạn sẽ hiểu rõ hơn về nó...</p>
-
-                            <div class="item__more">
-                                <i class="fa-solid fa-eye"></i><a href="">Xem thêm...</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- item content -->
-
-                    <!-- hidden content item -->
-                    <!-- <div style="display: flex" class="content__item hidden">
-
-                        <div class="item__img">
-                            <img src="../img/author1.jpg" alt="">
-                        </div>
-
-                        <div class="item__title">
-                            <h2>Bài 5: Background</h2>
-
-                            <span>Bài Viết Hay / 20/10/2022 3:02pm / <i class="fa-solid fa-eye"></i> 2m</span>
-
-                            <p>Background có lẽ nghe rất quen thuộc với mọi người, nhưng trong CSS nó sẽ có gì khác biệt không? Hãy đón xem bài viết này để hiểu hơn về Background...</p>
-
-                            <div class="item__more">
-                                <a href="">Xem thêm...</a>
-                            </div>
-                        </div>
-                    </div> -->
-
+                  
                     <!-- hidden content item end -->
 
                     <div class="content__more">
@@ -280,6 +270,253 @@
                </div>
 
             </div>
+
+            <div class="content__gallery">
+                <div class="content__title">
+                    <h1>Thư Viện Hình Ảnh</h1>
+                </div>
+                <div class="main">
+
+                    <span class="control prev">
+                        <i class="bx bx-chevron-left"></i>
+                    </span>
+    
+                    <span class="control next">
+                        <i class="bx bx-chevron-right"></i>
+                    </span>
+    
+                    <div class="wraps">
+                        <div class="img-wrap-1">	
+                            <img src="../MC PhuongThao/71.jpg" alt="" />
+                        </div>
+                        <div class="img-wrap-2">	
+                            <img src="../MC PhuongThao/70.jpg" alt="" />
+                        </div>
+                        <div class="img-wrap-3">	
+                            <img src="../MC PhuongThao/69.jpg" alt="" />
+                        </div>
+                    </div>
+        
+                </div>
+    
+                <div class="list-img">
+                    <div>
+                        <img src="../MC PhuongThao/1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/2.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/3.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/4.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/5.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/6.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/7.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/8.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/9.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/10.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/11.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/12.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/13.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/14.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/15.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/16.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/17.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/18.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/19.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/20.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/21.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/22.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/23.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/24.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/25.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/26.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/27.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/28.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/29.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/30.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/31.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/32.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/33.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/34.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/35.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/36.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/37.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/38.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/39.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/40.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/41.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/42.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/43.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/44.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/45.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/46.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/47.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/48.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/49.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/50.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/51.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/52.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/53.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/54.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/55.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/56.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/57.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/58.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/59.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/60.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/61.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/62.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/53.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/64.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/65.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/66.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/67.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/68.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/69.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/70.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../MC PhuongThao/71.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
         <!-- End Content -->
 
@@ -332,7 +569,7 @@
     
 
     <script src="../js/main.js"></script>
-
+    <script src="../MC PhuongThao/Image Gallery/main.js"></script>
  
 
 </body>
